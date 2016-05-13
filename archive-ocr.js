@@ -28,15 +28,7 @@ ocrForm.addEventListener('submit', (event) => {
 });
 ocr.appendChild(ocrForm);
 
-ocrForm.innerHTML =
-`<div class='o-forms-group ftlabs-ad-block__form'>
-	<p>Hello, we think you're blocking ads. This is problematic, because advertising helps fund our content. Instead of viewing ads, you can help us make sense of our archives by telling us what you think the following words are saying.</p>
-	<img src='http://i.imgur.com/nenXmte.png' style='display: block; margin: 0px auto 20px; '>
-	<p style="padding-bottom: 5px;">Once you've typed the words you can see, the article will be shown.</p>
-	<input type='text' class='o-forms-text' name='ocr-input' autocomplete='off' placeholder='Enter text here' style='font-size: 1em; width: 100%; border-radius: 5px; border: 1px solid rgb(172, 172, 172); padding: 8px !important; box-sizing: border-box; margin-bottom: 15px;' ></input>
-	<div class="o-forms-errortext" style="display:none;">Please enter the correct text</div>
-	<button class="o-buttons o-buttons--standout o-buttons--big" data-o-grid-colspan="full-width" type="submit" id="submit-btn" style="width: 100%;">Submit</button>
-</div>`;
+ocrForm.innerHTML ='<div class="o-forms-group ftlabs-ad-block__form"><p>Hello, we think you&#39;re blocking ads. This is problematic, because advertising helps fund our content. Instead of viewing ads, you can help us make sense of our archives by telling us what you think the following words are saying.</p><img src="http://i.imgur.com/nenXmte.png" style="display: block; margin: 0px auto 20px;"><p style="padding-bottom: 5px;">Once you&#39;ve typed the words you can see, the article will be shown.</p><input type="text" class="o-forms-text" name="ocr-input" autocomplete="off" placeholder="Enter text here" style="font-size: 1em; width: 100%; border-radius: 5px; border: 1px solid rgb(172, 172, 172); padding: 8px !important; box-sizing: border-box; margin-bottom: 15px;" ></input><div class="o-forms-errortext" style="display:none;">Please enter the correct text</div><button class="o-buttons o-buttons--standout o-buttons--big" data-o-grid-colspan="full-width" type="submit" id="submit-btn" style="width: 100%;">Submit</button></div>';
 
 articleParent.parentNode.insertBefore(ocr, articleParent);
 
