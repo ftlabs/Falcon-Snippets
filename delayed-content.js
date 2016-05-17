@@ -21,7 +21,7 @@ function showContent() {
 	}
 	
 	for(var w = 0; w < storyImages.length; w += 1){
-		storyImages[y].style.display = "block";		
+		storyImages[w].style.display = "block";		
 	}
 	
 }
