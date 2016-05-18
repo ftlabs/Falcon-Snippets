@@ -17,8 +17,8 @@ function shuffle(array) {
 	return array.join('');
 }
 
-const articleParent = document.querySelector('#storyContent');
-const articleParas = document.querySelectorAll('#storyContent p');
+var articleParent = document.querySelector('#storyContent');
+var  articleParas = document.querySelectorAll('#storyContent p');
 
 for(var x = 0; x < articleParas.length; x += 1){
 	
