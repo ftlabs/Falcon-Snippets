@@ -31,7 +31,13 @@ for(var x = 0; x < articleParas.length; x += 1){
 		for(var y = 0; y < children.length; y += 1){
 			
 			var thisChild = children[y];
+			
+			if(thisChild.nodeValue === null || thisChild.nodeValue === undefined){
+				continue;
+			}
+			
 			var words = thisChild.textContent.split(' ');
+			// var words = thisChild.nodeValue.split(' ');
 			
 			var newWords = [];
 			
@@ -71,6 +77,7 @@ for(var x = 0; x < articleParas.length; x += 1){
 				var backTogether = newWords.join(' ');
 				
 				thisChild.textContent = backTogether;
+				// thisChild.nodeValue = backTogether;
 				
 			}
 			
