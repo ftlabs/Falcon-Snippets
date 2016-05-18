@@ -14,6 +14,6 @@ for(var x = 0; x < articleParas.length; x += 1){
 			child.nodeValue = child.nodeValue.replace(/[aeiou]/gi, '');
 		}*/	
 
-}
+	}
 	
 }
