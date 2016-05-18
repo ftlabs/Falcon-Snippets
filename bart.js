@@ -36,6 +36,7 @@ function replacer () {
 			currentP = articleParas[pIndex];
 			character = 0;
 		}
+		// Request Animation polyfill required for IE
 		requestAnimationFrame(() => {
 			var replacementText = currentP.textContent;
 			// var replacementText = currentP.nodeValue;

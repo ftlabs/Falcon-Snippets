@@ -19,5 +19,5 @@ for (var i = 0; i < newTextLength; i += 1) {
 	var words = count(replacementText)
 	var wordToRemove = words[Math.random() * words.length | 0];
 
-	p.textContent = replacementText.replace(new RegExp(`\\b${wordToRemove}\\b`), new Array(wordToRemove.length).fill('_').join(''));
+	p.textContent = replacementText.replace(new RegExp("\\b" + wordToRemove + "\\b"), new Array(wordToRemove.length).fill('_').join(''));
 }
