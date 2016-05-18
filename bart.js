@@ -26,16 +26,19 @@ function setCharAt(str,index,chr) {
 function replacer () {
 	setTimeout(function(){
 		if (currentP === lastP && character === currentP.textContent.length && isLastBartCharacter(character)) {
+		// if (currentP === lastP && character === currentP.nodeValue.length && isLastBartCharacter(character)) {
 			return;
 		}
 
 		if (character >= currentP.textContent.length && isLastBartCharacter(character)) {
+		// if (character >= currentP.nodeValue.length && isLastBartCharacter(character)) {
 			pIndex++;
 			currentP = articleParas[pIndex];
 			character = 0;
 		}
 		requestAnimationFrame(() => {
 			var replacementText = currentP.textContent;
+			// var replacementText = currentP.nodeValue;
 			currentP.textContent = setCharAt(replacementText, character, getBartCharacter(character));
 			character++;
 			replacer();
