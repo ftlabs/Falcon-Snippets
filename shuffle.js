@@ -56,7 +56,7 @@ for(var x = 0; x < articleParas.length; x += 1){
 						firstChars = firstChars + letters.shift();
 					}
 					var lastChars = letters.pop();
-					if (specialChars.includes(lastChars)) {
+					if (specialChars.indexOf(lastChars) > -1) {
 						lastChars = letters.pop() + lastChars;
 					}
 					var shuffledChars = letters.length > 1 ? shuffle(letters) : letters;
