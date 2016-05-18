@@ -18,8 +18,7 @@ function shuffle(array) {
 }
 
 const articleParent = document.querySelector('#storyContent');
-const articleParas = Array.from(document.querySelectorAll('#storyContent p'))
-	.filter(el => el.parentNode === articleParent);
+const articleParas = document.querySelectorAll('#storyContent p');
 
 for(var x = 0; x < articleParas.length; x += 1){
 	

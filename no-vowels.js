@@ -9,6 +9,11 @@ for(var x = 0; x < articleParas.length; x += 1){
 	for(var y = 0; y < childNodes.length; y += 1){
 		var child = childNodes[y];
 		child.textContent = child.textContent.replace(/[aeiou]/gi, '');
-	}
+		
+		/*if(child.nodeValue !== null){
+			child.nodeValue = child.nodeValue.replace(/[aeiou]/gi, '');
+		}*/	
+
+}
 	
 }
